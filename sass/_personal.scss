@@ -1,0 +1,57 @@
+@use './variables';
+
+.personal-info {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+    h1 {
+
+        color: variables.$primary-color;
+        font-size: 60px;
+    }
+
+    a {
+        color: variables.$primary-color;
+        text-decoration: none;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .tech-icons {
+
+        gap: 2.5rem;
+        margin-top: 1rem;
+
+    }
+
+    .tech-icons i {
+        font-size: 1.5rem;
+        color: var(--secondary-color);
+        transition: var(--transition);
+    }
+
+    .tech-icons i:hover {
+        transform: translateY(-5px) scale(1.1);
+        color: var(--light-color);
+    }
+
+    .info-row {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+ 
+}
+
+
+    

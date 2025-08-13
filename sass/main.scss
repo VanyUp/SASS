@@ -1,0 +1,93 @@
+@use './variables';
+@use './personal';
+@use './skills';
+
+body {
+  background-color: rgb(197, 135, 222);
+}
+
+
+/* Contenedor principal centrado */
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Imagen de perfil adaptable */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Estilo del texto */
+.personal-info h1,
+.personal-info h2,
+.personal-info a {
+    margin: 0.5rem 0;
+    word-break: break-word; /* Evita que el texto se salga en móviles */
+}
+
+/* Lista de contacto adaptable */
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.contact-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Iconos debajo de la imagen */
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.tech-icons i {
+    font-size: 1.5rem; /* más pequeños para móviles */
+    color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+.tech-icons i:hover {
+    transform: translateY(-3px) scale(1.1);
+    color: var(--light-color);
+}
+
+/* ==== RESPONSIVE ==== */
+
+/* Tablets */
+@media (min-width: 600px) {
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+    .tech-icons i {
+        font-size: 2rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    .personal-info {
+        flex-direction: column;
+        max-width: 500px;
+    }
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+    .tech-icons i {
+        font-size: 2.5rem;
+    }
+}

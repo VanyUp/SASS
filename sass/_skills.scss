@@ -1,0 +1,26 @@
+.profesional {
+    .info-row {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+
+
+    .about-me {
+        margin-top: 1rem;
+        margin-left: 10rem; 
+        font-size: 1.2rem;
+        color: var(--light-color);
+        text-align: left;
+        max-width: 600px;
+    }
+
+    .skills {
+        margin-top: 2rem;
+        width: 100%;
+        text-align: auto;
+        margin-left: 20rem;
+    }
+}
